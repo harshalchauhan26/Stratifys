@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#2c1700",
+              "inverse-primary": "#d0bcff",
+              "outline": "#7b7486",
+              "surface-container": "#eaedff",
+              "surface-dim": "#d2d9f4",
+              "on-secondary-fixed": "#001a42",
+              "on-background": "#131b2e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#a76500",
+              "surface-bright": "#faf8ff",
+              "secondary-container": "#2170e4",
+              "on-secondary-fixed-variant": "#004395",
+              "primary": "#6b38d4",
+              "tertiary-fixed": "#ffdcbb",
+              "inverse-on-surface": "#eef0ff",
+              "on-primary-fixed": "#23005c",
+              "outline-variant": "#cbc3d7",
+              "primary-container": "#8455ef",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#673d00",
+              "surface-container-high": "#e2e7ff",
+              "on-primary-fixed-variant": "#5516be",
+              "surface-container-highest": "#dae2fd",
+              "surface": "#faf8ff",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#494454",
+              "surface-container-low": "#f2f3ff",
+              "secondary-fixed": "#d8e2ff",
+              "secondary-fixed-dim": "#adc6ff",
+              "surface-tint": "#6d3bd7",
+              "tertiary-fixed-dim": "#ffb869",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#fffbff",
+              "background": "#faf8ff",
+              "secondary": "#0058be",
+              "on-surface": "#131b2e",
+              "tertiary": "#855000",
+              "surface-variant": "#dae2fd",
+              "primary-fixed": "#e9ddff",
+              "inverse-surface": "#283044",
+              "on-tertiary-container": "#fffbff",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#fefcff",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#d0bcff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #faf8ff;
+      }
+      .performance-beam {
+        height: 2px;
+        background: linear-gradient(90deg, #6b38d4 0%, #0058be 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-100 dark:border-slate-800/50 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto font-sans antialiased text-sm font-medium tracking-tight">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white">Stratisfy</div>
+<div class="hidden md:flex items-center space-x-8">
+  <a class="text-slate-600 hover:text-slate-900 transition-colors" href="index.html">Home</a>
+
+<a class="text-violet-600 font-semibold border-b-2 border-violet-600" href="testimonies.html">Testimonies</a>
+
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="services.html">Services</a>
+
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="about.html">About</a>
+
+
+</div>
+<div class="flex items-center gap-4">
+<a href="/conversion.html" class="bg-primary text-on-primary px-6 py-2.5 rounded text-sm font-semibold hover:opacity-90 active:scale-95 transition-all inline-block text-center">
+  Get Started
+</a>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-24">
+<div class="inline-block px-3 py-1 mb-6 bg-surface-container-high text-primary font-bold text-[0.6875rem] uppercase tracking-[0.1em] rounded-sm">
+                Efficiency Protocol
+            </div>
+<h1 class="text-[3.5rem] leading-[1.1] font-black tracking-[-0.04em] text-on-background mb-8 max-w-4xl">
+                The Performance <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Standard</span> for Scale.
+            </h1>
+<p class="text-lg text-on-surface-variant font-normal leading-relaxed max-w-2xl">
+                Moving beyond baseline metrics. We architect high-performance editorial systems that treat data density as a competitive advantage.
+            </p>
+</header>
+<!-- Metrics Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32">
+<!-- Case Study 1: Veloce Payments -->
+<div class="md:col-span-7 group bg-surface-container-low p-1 relative overflow-hidden">
+<div class="performance-beam absolute top-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="bg-surface-container-lowest p-10 h-full flex flex-col justify-between">
+<div>
+<span class="text-[0.75rem] font-bold uppercase tracking-widest text-primary mb-12 block">Veloce Payments</span>
+<div class="grid grid-cols-2 gap-12 mb-12">
+<div>
+<div class="text-[2.5rem] font-black tracking-tighter text-on-background">+18%</div>
+<div class="text-[0.6875rem] font-medium uppercase tracking-wider text-outline">Revenue Growth</div>
+</div>
+<div>
+<div class="text-[2.5rem] font-black tracking-tighter text-on-background">3.2x</div>
+<div class="text-[0.6875rem] font-medium uppercase tracking-wider text-outline">LTV Increase</div>
+</div>
+</div>
+<h3 class="text-2xl font-semibold leading-tight text-on-surface mb-6">
+                            "Stratisfy didn't just redesign our UI; they re-engineered how we process transactional data at scale."
+                        </h3>
+</div>
+<div class="flex items-center space-x-4">
+<img alt="Marcus Thorne" class="w-12 h-12 rounded-full object-cover" data-alt="Close-up studio portrait of a confident male executive in a charcoal suit against a clean white background, soft editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv5Z124qBlrNIV9CvgPIaGge5QRy-65HMNgs5ONJCS0J1MQtJa1VpjpPG7I63-_wrOWKWmu0O_30Q7VqhtDivzjcDKR5M3cEY_Y0TsKYGUMWCiaaA3MX4dv2fuxrsjefxdoWcxUVNB0pAqfBFmJrWnnEdsioFme3WpmN7wka8m_ofz-x7YHnUID6cBHQXSmJi9m8KiJGy7m14cr4mydaO85Q0Z6EG-_ZwQVV0JepMt0esXOQvhjmwP7xOKWybcuywLPsrIRg-apZk"/>
+<div>
+<div class="text-sm font-bold text-on-surface">Marcus Thorne</div>
+<div class="text-[0.6875rem] uppercase tracking-wider text-outline">CTO, Veloce Payments</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 2: Lume Aesthetics -->
+<div class="md:col-span-5 group bg-surface-container-low p-1 relative overflow-hidden">
+<div class="bg-surface-container-lowest p-10 h-full flex flex-col justify-between">
+<div>
+<span class="text-[0.75rem] font-bold uppercase tracking-widest text-secondary mb-12 block">Lume Aesthetics</span>
+<div class="space-y-8 mb-12">
+<div>
+<div class="text-[2.25rem] font-black tracking-tighter text-on-background">4.5x</div>
+<div class="text-[0.6875rem] font-medium uppercase tracking-wider text-outline">ROAS Performance</div>
+</div>
+<div>
+<div class="text-[2.25rem] font-black tracking-tighter text-on-background">-40%</div>
+<div class="text-[0.6875rem] font-medium uppercase tracking-wider text-outline">CPA Reduction</div>
+</div>
+</div>
+</div>
+<div>
+<p class="text-lg italic text-on-surface-variant mb-8 leading-relaxed">
+                            "The technical precision of their work is unmatched. Our customer acquisition costs dropped overnight."
+                        </p>
+<div class="flex items-center space-x-4">
+<img alt="Elena Vance" class="w-12 h-12 rounded-full object-cover" data-alt="Professional portrait of a woman with a slight smile, wearing a minimalist silk blouse in a brightly lit modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWF17nq-nduGfJ6dVlGThmXRTG6zub9VTSTYWOvJSPI92sCOUlU7geUoPc3n7mMVYf1_db3gO4hHYqAfRnQrwwLp4j8fKH75Nf8C-x1hWVyQj8XZ8gYe0hu81PGJzgHg9LzoC2g0l3cVegDhQnvgfAGdEei6kT6Tzujm1O93rjn9V2dIr3IDZf3YvilrsrTt1Y_OLtafudO2UHj2EJjRJaXX4idTH7gzqfWMLS2FRo6WGOoMvrbTo0mt-H_gyVwPByFRDkcuKGZys"/>
+<div>
+<div class="text-sm font-bold text-on-surface">Elena Vance</div>
+<div class="text-[0.6875rem] uppercase tracking-wider text-outline">Marketing Director</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study 3: CoreSync AI -->
+<div class="md:col-span-12 group bg-surface-container-low p-1 relative overflow-hidden">
+<div class="bg-surface-container-lowest p-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="text-[0.75rem] font-bold uppercase tracking-widest text-primary mb-8 block">CoreSync AI</span>
+<h2 class="text-[2.5rem] font-black tracking-tighter text-on-background leading-none mb-4">Pipeline Velocity Reimagined.</h2>
+<p class="text-on-surface-variant mb-12 max-w-md">Our collaboration with CoreSync AI focused on removing the friction between data ingestion and actionable sales intelligence.</p>
+<div class="flex items-center space-x-4">
+<img alt="David Chen" class="w-16 h-16 rounded-full object-cover" data-alt="Modern high-resolution headshot of a young entrepreneur in a black turtleneck, soft natural window light, clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqlNn-EGlN3DdaWBiMzjICSmhWhQoMkYb2_RzEnQKH3ucGQxUBU1Lge6yLX0BzpR2w68yARWagwskMeQBK5CMJMyfx2tsa6FxGQR8Qjub7boPx_9uaY9sQnw04rUUYMTreQ0LSrqER_E7BaT78WLe8WqI3hJC4vXXCL5GnNL23L_MBJgUMqVplIQ3xBUUIBvSkZIf08_NBteXmEuCLhUBRZHOmwS5umRcl6FXHOhgfnDVbxGNL-X4pje8fyYgxIU1fMuoqsKcBuXY"/>
+<div>
+<div class="text-base font-bold text-on-surface">David Chen</div>
+<div class="text-[0.75rem] uppercase tracking-wider text-outline">Founder, CoreSync AI</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="p-8 bg-surface border-l-4 border-primary">
+<div class="text-[3rem] font-black tracking-tighter text-primary">42%</div>
+<div class="text-[0.75rem] font-bold uppercase tracking-widest text-outline mt-2">CPA Reduction</div>
+</div>
+<div class="p-8 bg-surface border-l-4 border-secondary">
+<div class="text-[3rem] font-black tracking-tighter text-secondary">2.5x</div>
+<div class="text-[0.75rem] font-bold uppercase tracking-widest text-outline mt-2">Velocity Index</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Table Style Section -->
+<section class="mt-40">
+<h2 class="text-3xl font-black tracking-tighter mb-12">Performance Benchmarks</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-on-background">
+<th class="py-4 text-[0.6875rem] uppercase tracking-widest text-outline font-black">Metric Category</th>
+<th class="py-4 text-[0.6875rem] uppercase tracking-widest text-outline font-black">Industry Average</th>
+<th class="py-4 text-[0.6875rem] uppercase tracking-widest text-outline font-black">Stratisfy Standard</th>
+<th class="py-4 text-[0.6875rem] uppercase tracking-widest text-outline font-black">Delta</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high">
+<tr class="group hover:bg-surface-container-low transition-colors">
+<td class="py-8 font-semibold text-lg">Processing Latency</td>
+<td class="py-8 text-on-surface-variant">420ms</td>
+<td class="py-8 text-primary font-black">24ms</td>
+<td class="py-8"><span class="bg-primary/10 text-primary px-3 py-1 rounded-sm text-xs font-bold">-94.2%</span></td>
+</tr>
+<tr class="group hover:bg-surface-container-low transition-colors">
+<td class="py-8 font-semibold text-lg">Conversion Efficiency</td>
+<td class="py-8 text-on-surface-variant">2.1%</td>
+<td class="py-8 text-primary font-black">5.8%</td>
+<td class="py-8"><span class="bg-primary/10 text-primary px-3 py-1 rounded-sm text-xs font-bold">+176%</span></td>
+</tr>
+<tr class="group hover:bg-surface-container-low transition-colors">
+<td class="py-8 font-semibold text-lg">Infrastructure Overhead</td>
+<td class="py-8 text-on-surface-variant">$14.2k/mo</td>
+<td class="py-8 text-primary font-black">$6.1k/mo</td>
+<td class="py-8"><span class="bg-primary/10 text-primary px-3 py-1 rounded-sm text-xs font-bold">-57%</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-2">
+<span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">Stratisfy</span>
+<p class="text-sm leading-relaxed font-normal text-slate-500 dark:text-slate-400 max-w-xs">
+                    Architecting the future of high-performance editorial interfaces. Precision-engineered for growth.
+                </p>
+</div>
+<div>
+<span class="text-[0.75rem] font-black uppercase tracking-widest text-on-background mb-6 block">Services</span>
+<ul class="space-y-4 text-sm font-normal text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Performance Audit</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Interface Systems</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Data Narrative</a></li>
+</ul>
+</div>
+<div>
+<span class="text-[0.75rem] font-black uppercase tracking-widest text-on-background mb-6 block">Company</span>
+<ul class="space-y-4 text-sm font-normal text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Our Method</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Careers</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Manifesto</a></li>
+</ul>
+</div>
+<div>
+<span class="text-[0.75rem] font-black uppercase tracking-widest text-on-background mb-6 block">Connect</span>
+<ul class="space-y-4 text-sm font-normal text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">Twitter / X</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">LinkedIn</a></li>
+<li><a class="hover:text-violet-600 dark:hover:text-violet-400 transition-all duration-200 underline decoration-violet-500/30 underline-offset-4" href="#">GitHub</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-24 pt-12 border-t border-slate-100 dark:border-slate-800">
+<div class="text-sm font-normal text-slate-500 dark:text-slate-400">
+                © 2024 Stratisfy. High-Performance Editorial.
+            </div>
+</div>
+</footer>
+</body></html>

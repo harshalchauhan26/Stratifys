@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#2c1700",
+              "inverse-primary": "#d0bcff",
+              "outline": "#7b7486",
+              "surface-container": "#eaedff",
+              "surface-dim": "#d2d9f4",
+              "on-secondary-fixed": "#001a42",
+              "on-background": "#131b2e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#a76500",
+              "surface-bright": "#faf8ff",
+              "secondary-container": "#2170e4",
+              "on-secondary-fixed-variant": "#004395",
+              "primary": "#6b38d4",
+              "tertiary-fixed": "#ffdcbb",
+              "inverse-on-surface": "#eef0ff",
+              "on-primary-fixed": "#23005c",
+              "outline-variant": "#cbc3d7",
+              "primary-container": "#8455ef",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#673d00",
+              "surface-container-high": "#e2e7ff",
+              "on-primary-fixed-variant": "#5516be",
+              "surface-container-highest": "#dae2fd",
+              "surface": "#faf8ff",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#494454",
+              "surface-container-low": "#f2f3ff",
+              "secondary-fixed": "#d8e2ff",
+              "secondary-fixed-dim": "#adc6ff",
+              "surface-tint": "#6d3bd7",
+              "tertiary-fixed-dim": "#ffb869",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#fffbff",
+              "background": "#faf8ff",
+              "secondary": "#0058be",
+              "on-surface": "#131b2e",
+              "tertiary": "#855000",
+              "surface-variant": "#dae2fd",
+              "primary-fixed": "#e9ddff",
+              "inverse-surface": "#283044",
+              "on-tertiary-container": "#fffbff",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#fefcff",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#d0bcff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrolling-ticker {
+            display: flex;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .ticker-content {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #6b38d4, #0058be);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .performance-beam {
+            height: 2px;
+            background: linear-gradient(90deg, #6b38d4, #0058be);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-background antialiased">
+<nav class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md border-b border-slate-100 shadow-sm">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900">Stratisfy</div>
+<div class="hidden md:flex items-center gap-8 font-sans antialiased text-sm font-medium tracking-tight">
+<a class="text-violet-600 font-semibold border-b-2 border-violet-600" href="index.html">Home</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="testimonies.html">Testimonies</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="services.html">Services</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="about.html">About</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="/conversion.html" class="bg-primary text-on-primary px-6 py-2.5 rounded text-sm font-semibold hover:opacity-90 active:scale-95 transition-all inline-block text-center">
+  Get Started
+</a>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<section class="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-32 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-surface-container-high rounded-full">
+<span class="performance-beam w-12 rounded-full"></span>
+<span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-primary">Performance-First Agency</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold tracking-[-0.04em] leading-[1.05] text-on-background mb-8">
+                        Precision Marketing.<br/>
+                        Predictable <span class="gradient-text">Revenue.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+                        Meta &amp; Google Ads strategies designed to scale B2B and E-Commerce brands past $10M through data-backed editorial authority.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href='conversion.html'  class="bg-primary text-on-primary px-8 py-4 rounded text-base font-bold flex items-center justify-center gap-2 hover:opacity-95 transition-all active:scale-95">
+                            Calculate Your Growth
+                            <span class="material-symbols-outlined text-lg">trending_up</span>
+</a>
+<a href='about.html' class="bg-surface-container-lowest text-secondary px-8 py-4 rounded text-base font-bold flex items-center justify-center gap-2 border border-outline-variant/20 hover:bg-surface-container-low transition-all">
+                            Our Strategy
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-4 relative">
+<div class="aspect-square bg-surface-container-low rounded-xl relative overflow-hidden group">
+<img alt="Strategic Analysis" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Modern high-tech command center interface showing complex financial data and stock market growth metrics with purple and blue light leaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzX61sREq_3SwIfJiOCIs9fNXp1fCiLyTLxAzVt6vtJtj6-v6i6eg88zBA6pJXlsKd_HGYfd1bIFTwbfSCJ35pbVlcrHnq68pzU6-ZjL5z_LileZ3_Vu1Ec6jk4unKoik9qrimaO77zCyR7eIYE6bxmJ3ofzyf4r-W4BP7Qy4q-XhSgFUcCv5lOPa_efFokUvEKBw4Fdfxdyxu2zzv3xxwM8_8gWIOX3m28h3gNm_VogF9K5dcQJNg30_I2xhsf8rmrsjBKCfei5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface-container-lowest/90 backdrop-blur-md rounded border border-outline-variant/10 shadow-xl">
+<span class="text-[0.6875rem] font-bold tracking-widest text-primary block mb-2 uppercase">Live Performance</span>
+<div class="text-3xl font-black text-on-background leading-none">+214%</div>
+<div class="text-xs text-on-surface-variant font-medium mt-1">YoY Scaling Capacity</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest py-8 overflow-hidden border-y border-outline-variant/10">
+<div class="scrolling-ticker">
+<div class="ticker-content gap-16 md:gap-32 items-center px-4">
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Meta: <span class="text-primary">4.8x ROAS</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Google: <span class="text-secondary">-22% CPA</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[SEO: <span class="text-primary">+112% Organic Traffic</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Amazon: <span class="text-secondary">3.9x ROAS</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Retention: <span class="text-primary">96% Net Revenue</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Meta: <span class="text-primary">4.8x ROAS</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[Google: <span class="text-secondary">-22% CPA</span>]</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-bold tracking-tight text-slate-500">
+<span class="text-on-background">[SEO: <span class="text-primary">+112% Organic Traffic</span>]</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-8 relative">
+<div class="performance-beam absolute top-0 left-0 w-full"></div>
+<span class="text-[0.75rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase block mb-4">Ad Spend Managed</span>
+<div class="text-4xl font-bold tracking-tight text-on-background">$250M+</div>
+<p class="text-xs text-on-surface-variant mt-2 font-medium">Cumulative Portfolio Scaling</p>
+</div>
+<div class="bg-surface-container-lowest p-8 relative">
+<span class="text-[0.75rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase block mb-4">Avg. CPA Reduction</span>
+<div class="text-4xl font-bold tracking-tight text-primary">-30%</div>
+<p class="text-xs text-on-surface-variant mt-2 font-medium">Efficiency Optimized Monthly</p>
+</div>
+<div class="bg-surface-container-lowest p-8 relative">
+<span class="text-[0.75rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase block mb-4">Avg. ROAS (Ecom)</span>
+<div class="text-4xl font-bold tracking-tight text-on-background">4.2x</div>
+<p class="text-xs text-on-surface-variant mt-2 font-medium">Sustainable Scale Multiplier</p>
+</div>
+<div class="bg-surface-container-lowest p-8 relative">
+<span class="text-[0.75rem] font-bold tracking-[0.05em] text-on-surface-variant uppercase block mb-4">Retention Rate</span>
+<div class="text-4xl font-bold tracking-tight text-secondary">96%</div>
+<p class="text-xs text-on-surface-variant mt-2 font-medium">Client Partnership Longevity</p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl md:text-5xl font-bold tracking-tight text-on-background mb-6">Revenue Infrastructure</h2>
+<p class="text-on-surface-variant leading-relaxed">We replace guesswork with high-performance editorial systems that turn clicks into predictable customer lifetime value.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="testimonies.html">
+                        Explore Testimonies
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-10 group hover:translate-y-[-4px] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="hub">hub</span>
+<h3 class="text-xl font-bold mb-4">Omnichannel Sync</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Unified messaging across Meta, Google, and Amazon to eliminate brand friction.</p>
+<div class="h-[1px] bg-outline-variant/20 w-full group-hover:bg-primary/30 transition-colors"></div>
+</div>
+<div class="bg-surface-container-lowest p-10 group hover:translate-y-[-4px] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6" data-icon="monitoring">monitoring</span>
+<h3 class="text-xl font-bold mb-4">Incremental Testing</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Proprietary measurement models that prove true lift, not just attribution noise.</p>
+<div class="h-[1px] bg-outline-variant/20 w-full group-hover:bg-secondary/30 transition-colors"></div>
+</div>
+<div class="bg-surface-container-lowest p-10 group hover:translate-y-[-4px] transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h3 class="text-xl font-bold mb-4">Creative Synthesis</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Editorial-grade content engineered for algorithmic viral loop velocity.</p>
+<div class="h-[1px] bg-outline-variant/20 w-full group-hover:bg-primary/30 transition-colors"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="bg-on-background rounded-xl p-12 md:p-24 relative overflow-hidden text-center">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-8">Ready to exit the plateau?</h2>
+<p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">Join 40+ category-leading brands scaling with the Stratisfy Revenue Engine.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+ 
+
+  
+<<a href="/conversion.html" class="bg-transparent border border-slate-700 text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-slate-800 transition-colors">Work With Us</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full pt-24 pb-12 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-2 md:col-span-1">
+<span class="text-xl font-bold text-slate-900 dark:text-white mb-6 block">Stratisfy</span>
+<p class="text-sm leading-relaxed font-normal text-slate-500 dark:text-slate-400">
+                    High-performance editorial for brands that demand precision.
+                </p>
+</div>
+<div>
+<span class="text-slate-900 dark:text-white font-medium block mb-6">Services</span>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Meta Ads</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Google Search</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Brand Identity</a></li>
+</ul>
+</div>
+<div>
+<span class="text-slate-900 dark:text-white font-medium block mb-6">Company</span>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Our Strategy</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Partnerships</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<span class="text-slate-900 dark:text-white font-medium block mb-6">Legal</span>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<span class="text-slate-900 dark:text-white font-medium block mb-6">Connect</span>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">X / Twitter</a></li>
+<li><a class="text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 text-sm transition-all duration-200" href="#">Email Us</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 px-8 max-w-7xl mx-auto pt-8 border-t border-slate-200 dark:border-slate-800">
+<p class="text-sm leading-relaxed font-normal text-slate-500 dark:text-slate-400">© 2024 Stratisfy. High-Performance Editorial.</p>
+</div>
+</footer>
+</body></html>

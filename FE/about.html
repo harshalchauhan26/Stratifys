@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#2c1700",
+              "inverse-primary": "#d0bcff",
+              "outline": "#7b7486",
+              "surface-container": "#eaedff",
+              "surface-dim": "#d2d9f4",
+              "on-secondary-fixed": "#001a42",
+              "on-background": "#131b2e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#a76500",
+              "surface-bright": "#faf8ff",
+              "secondary-container": "#2170e4",
+              "on-secondary-fixed-variant": "#004395",
+              "primary": "#6b38d4",
+              "tertiary-fixed": "#ffdcbb",
+              "inverse-on-surface": "#eef0ff",
+              "on-primary-fixed": "#23005c",
+              "outline-variant": "#cbc3d7",
+              "primary-container": "#8455ef",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#673d00",
+              "surface-container-high": "#e2e7ff",
+              "on-primary-fixed-variant": "#5516be",
+              "surface-container-highest": "#dae2fd",
+              "surface": "#faf8ff",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#494454",
+              "surface-container-low": "#f2f3ff",
+              "secondary-fixed": "#d8e2ff",
+              "secondary-fixed-dim": "#adc6ff",
+              "surface-tint": "#6d3bd7",
+              "tertiary-fixed-dim": "#ffb869",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#fffbff",
+              "background": "#faf8ff",
+              "secondary": "#0058be",
+              "on-surface": "#131b2e",
+              "tertiary": "#855000",
+              "surface-variant": "#dae2fd",
+              "primary-fixed": "#e9ddff",
+              "inverse-surface": "#283044",
+              "on-tertiary-container": "#fffbff",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#fefcff",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#d0bcff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .performance-beam {
+            height: 2px;
+            background: linear-gradient(90deg, #6b38d4, #0058be);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md shadow-sm border-b border-slate-100">
+<nav class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900">Stratisfy</div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-sans antialiased text-sm font-medium tracking-tight" href="index.html">Home</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-sans antialiased text-sm font-medium tracking-tight" href="testimonies.html">Testimonies</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors font-sans antialiased text-sm font-medium tracking-tight" href="services.html">Services</a>
+<a class="text-violet-600 font-semibold border-b-2 border-violet-600 font-sans antialiased text-sm tracking-tight" href="about.html">About</a>
+
+</div>
+
+<a href="/conversion.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-bold active:scale-95 transition-transform inline-block text-center">
+  Get Started
+</a>
+
+</nav>
+</header>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative py-24 px-8 overflow-hidden bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="inline-block text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-primary mb-4">Architecture of Scale</span>
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-[1.1] text-on-background mb-8">
+                        Meet the <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Growth Architects</span>
+</h1>
+<p class="text-lg leading-relaxed text-on-surface-variant max-w-xl">
+                        We don't just build pipelines; we engineer revenue ecosystems. By blending high-fidelity data with editorial precision, we transform brands into market leaders.
+                    </p>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl border border-outline-variant/10">
+<img class="w-full h-96 object-cover" data-alt="Modern minimalist architectural office interior with large windows, clean lines, and soft natural lighting reflecting on white surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBWypZqx4vzGWuLEmOiserBjyu0ZWtOqYf5zC1XZt7hp6mertcMP-DRm1QocX1nWzmlsswAsxDAiroc72SMPU1v4wHCaa-sPWDnoLBGSU9qCX3kPRCX6gDejOLd4-iQG8_QywY5Gatn-ecbFd6klyuuQqDXLgble5bLoR2iiB7p8Ecferq98aC-jhaMw0NTTn9ZcYRDDXVT7wZ4sI1zTRBq-OvHObx5_eoJGvFis0kxLlvV251XV9dMeipnXgAzVvKCLdhYlCe5Xs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Mission -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5">
+<span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-on-surface-variant opacity-60">The Mission</span>
+<h2 class="text-4xl font-bold tracking-tight mt-4 mb-8">Data-led decision-making for revenue pipelines</h2>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-end">
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12">
+                            Strategy without data is just an opinion. We've eliminated the guesswork by building a proprietary framework that anchors every creative decision in real-time performance metrics.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-lowest border-t-2 border-primary">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="analytics">analytics</span>
+<h3 class="text-lg font-bold mb-2">Predictive Modeling</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Anticipating market shifts before they impact your CAC.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest border-t-2 border-secondary">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="query_stats">query_stats</span>
+<h3 class="text-lg font-bold mb-2">Real-time Attribution</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Granular visibility into every dollar spent across the funnel.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Strategy (Asymmetric Grid) -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="text-4xl font-bold tracking-tight mb-4">The Strategy</h2>
+<p class="text-on-surface-variant">Our full-funnel approach to sustainable expansion.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Awareness -->
+<div class="group relative bg-surface-container-lowest p-12 transition-all duration-300 hover:z-10 hover:shadow-xl">
+<div class="performance-beam absolute top-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="text-5xl font-black text-outline-variant/20 block mb-6">01</span>
+<h4 class="text-2xl font-bold mb-6">Awareness</h4>
+<p class="text-on-surface-variant leading-relaxed mb-8">Capturing high-intent attention through technical authority and editorial content that demands resonance.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> SEO Domination</li>
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Thought Leadership</li>
+</ul>
+</div>
+<!-- Conversion -->
+<div class="group relative bg-surface-container-lowest p-12 transition-all duration-300 hover:z-10 hover:shadow-xl">
+<div class="performance-beam absolute top-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="text-5xl font-black text-outline-variant/20 block mb-6">02</span>
+<h4 class="text-2xl font-bold mb-6">Conversion</h4>
+<p class="text-on-surface-variant leading-relaxed mb-8">Frictionless journeys designed to turn passive interest into active revenue through psychological precision.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> CRO Optimization</li>
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> High-Velocity LPs</li>
+</ul>
+</div>
+<!-- Retention -->
+<div class="group relative bg-surface-container-lowest p-12 transition-all duration-300 hover:z-10 hover:shadow-xl">
+<div class="performance-beam absolute top-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="text-5xl font-black text-outline-variant/20 block mb-6">03</span>
+<h4 class="text-2xl font-bold mb-6">Retention</h4>
+<p class="text-on-surface-variant leading-relaxed mb-8">Building recursive loops of value that maximize LTV and transform customers into brand evangelists.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Lifecycle Email</li>
+<li class="flex items-center gap-3 text-sm font-medium"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Advocacy Programs</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Grid -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-[0.6875rem] font-bold tracking-[0.05em] uppercase text-primary mb-4 block">Our People</span>
+<h2 class="text-4xl font-bold tracking-tight">The minds behind the metrics.</h2>
+</div>
+<div class="text-right">
+<button class="text-primary font-bold text-sm hover:underline underline-offset-8 transition-all">Join the Collective →</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-1 gap-y-1 bg-surface-container-high p-px">
+<!-- Team Member 1 -->
+<div class="bg-surface-container-lowest p-8 group transition-all duration-300 hover:bg-surface-bright">
+<div class="aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a man in a modern blazer, minimalist background, high-contrast studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFTlHAofhXfBao6haLmPY4l7UfGgNFjoUjXN3jzcGZxBEoDevO1OrSkORBBcAuobLj49xg8Zi-ZF4xqW--ooPcNAsyKA8K04uiLUJKHk-yH7zDMV_PN3noVDnBHGixLMEDNxeXR5L6MJfF87Mre25rNDhDqKV8PCq9HSuzuLcv2awr9IRrz2FeLlSeSQSa4gj2oCedR2CeZnpX1GriHpH3yDg-5B1jILLFUUwXbPOn1xG-dG_p3GecXyclhhLR1c_jRTjysFBO6tI"/>
+</div>
+<h5 class="text-lg font-bold mb-1">Julian Thorne</h5>
+<p class="text-xs font-medium text-primary tracking-widest uppercase mb-4">Founder / CTO</p>
+<a class="inline-flex items-center gap-2 text-xs font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base" data-icon="link">link</span> LinkedIn
+                        </a>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-surface-container-lowest p-8 group transition-all duration-300 hover:bg-surface-bright">
+<div class="aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close up of a professional woman with a confident expression, neutral grey background, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAMJiPR04ndy7wVwP-jv8OEwnKN1BbJqcxpdOZ45z2vhp9FBgigAW4O56c2froota7fEog1RqegVUXseAW75rDckYiuAoC1TLekzDDiVDElQ93JYT4wkSLmwVxl8DRPYFu9yka5m61Fr2QrxVRvlh7P5OXVrrnmI0zF5OL-8JESeaT3cgmeBEfSHt9Ir8WzazbT2lo1yFH4NXTcS49PtO2_b87QVty11wj1zwq5u10jAih3NBxZVQbkupSP_UemxFW21kCKB4ajCU"/>
+</div>
+<h5 class="text-lg font-bold mb-1">Elena Rodriguez</h5>
+<p class="text-xs font-medium text-primary tracking-widest uppercase mb-4">Head of Strategy</p>
+<a class="inline-flex items-center gap-2 text-xs font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base" data-icon="link">link</span> LinkedIn
+                        </a>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-surface-container-lowest p-8 group transition-all duration-300 hover:bg-surface-bright">
+<div class="aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Man in high-end business attire looking thoughtfully away, sharp architectural shadow in background, professional mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaKR3Mkr7SlodmowyS1TjG6QdlsIlKkmZ2-k2XOmmq9VD523Ojk1TcaCiKty1s7RzizeXKfty426z1N1seLTlS0BkBN674Kmlx8jEj80fiAJTRclS-0VI0abKZu3ve0CJpyu6WV8egrrRHtEfO5q2rTF-xoTAoX2TkaIEeH-ZZHsVv4mFvB1jigKgQor8o-5L391sg9K_G0oglXeLd1jU8CYG1p9ekX5Rr7w_xxmd4RLzCKq65GhC7Oyg4mxzjlgsnqytT5IRxT7I"/>
+</div>
+<h5 class="text-lg font-bold mb-1">Marcus Chen</h5>
+<p class="text-xs font-medium text-primary tracking-widest uppercase mb-4">Growth Lead</p>
+<a class="inline-flex items-center gap-2 text-xs font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base" data-icon="link">link</span> LinkedIn
+                        </a>
+</div>
+<!-- Team Member 4 -->
+<div class="bg-surface-container-lowest p-8 group transition-all duration-300 hover:bg-surface-bright">
+<div class="aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional woman in a creative studio environment, soft background bokeh, warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvUIhR9gv1RfkvpyrZrJBsqgIKPB0FpbTtHKzvHhBGT8PaComTUSGzER033HBtG0eRgjullHW2tnlXNp38PHnRBgkih9NSwS9yZgA4rdQBAJE4JRDyxmi2kYu1IF-DB3usHmFyPRodgUqfMOu0H3I5Nlop_WYKqHm5Yz5agl8hMgEAVJyXXXppAYdou4J5a5wnjDgc0wA796JAjY53E-CnQsXyYqxAYwxr6OfutB7tLeWjkNhMd_KDJzOxXL48roiA-0uwrN_u_oM"/>
+</div>
+<h5 class="text-lg font-bold mb-1">Sarah Jenkins</h5>
+<p class="text-xs font-medium text-primary tracking-widest uppercase mb-4">Design Director</p>
+<a class="inline-flex items-center gap-2 text-xs font-semibold text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base" data-icon="link">link</span> LinkedIn
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-primary py-20 px-8 relative overflow-hidden rounded-lg">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-secondary/30 to-transparent"></div>
+<div class="relative z-10 max-w-2xl text-on-primary">
+<h2 class="text-4xl font-bold tracking-tight mb-6">Ready to architect your next phase of growth?</h2>
+<p class="text-primary-fixed/80 text-lg mb-10">Join 200+ high-performance teams using Stratisfy to dominate their category.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-white text-primary px-8 py-4 font-bold rounded-lg hover:bg-surface-container transition-colors">Start Your Audit</button>
+<button class="border border-white/30 text-white px-8 py-4 font-bold rounded-lg hover:bg-white/10 transition-colors">View Our Portfolio</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-24 pb-12 bg-slate-50">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-2">
+<span class="text-xl font-bold text-slate-900 mb-6 block">Stratisfy</span>
+<p class="text-sm leading-relaxed font-normal text-slate-500 max-w-xs mb-8">
+                    High-performance editorial and growth engineering for the next generation of digital leaders.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400" data-icon="share">share</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="mail">mail</span>
+</div>
+</div>
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-900 mb-6 block">Services</span>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Funnel Audit</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Content Strategy</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Paid Acquisition</a></li>
+</ul>
+</div>
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-900 mb-6 block">Company</span>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-900 font-medium underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">About Us</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Careers</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-900 mb-6 block">Resources</span>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Case Studies</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Blog</a></li>
+<li><a class="text-sm text-slate-500 hover:text-violet-600 underline decoration-violet-500/30 underline-offset-4 transition-all duration-200" href="#">Newsletter</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-24 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm leading-relaxed font-normal text-slate-500">© 2024 Stratisfy. High-Performance Editorial.</p>
+<div class="flex gap-8">
+<a class="text-xs text-slate-400 hover:text-violet-600 transition-colors" href="#">Legal</a>
+<a class="text-xs text-slate-400 hover:text-violet-600 transition-colors" href="#">Privacy</a>
+<a class="text-xs text-slate-400 hover:text-violet-600 transition-colors" href="#">Connect</a>
+</div>
+</div>
+</footer>
+</body></html>
